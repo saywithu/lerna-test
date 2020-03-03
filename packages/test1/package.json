@@ -1,5 +1,5 @@
 {
-  "name": "@zigbang-sdk/test1",
+  "name": "@saywithu-sdk/test1",
   "version": "0.0.2",
   "description": "> TODO: description",
   "author": "김준연 <saywithu@zigbang.com>",
@@ -28,5 +28,5 @@
   "bugs": {
     "url": "https://github.com/saywithu/lerna-test/issues"
   },
-  "gitHead": "92e293362dfecca5b14035c51cc3c420b342008d"
+  "gitHead": "81211ac1c9dbe57288813cca9fe63bc6b8a38495"
 }
