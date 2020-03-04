@@ -7,6 +7,9 @@
   "license": "ISC",
   "main": "lib/test1.js",
   "typings": "lib/test1.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -17,9 +20,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/saywithu/lerna-test.git"
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "scripts": {
     "tsc": "tsc",
