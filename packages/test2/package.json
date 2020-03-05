@@ -5,17 +5,17 @@
   "author": "김준연 <saywithu@zigbang.com>",
   "homepage": "https://github.com/saywithu/lerna-test#readme",
   "license": "ISC",
-  "main": "lib/test2.js",
-  "typings": "lib/test2.d.ts",
+  "main": "dist/test2.js",
+  "typings": "dist/test2.d.ts",
   "publishConfig": {
     "access": "public"
   },
   "directories": {
-    "lib": "lib",
+    "lib": "dist",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "dist"
   ],
   "repository": {
     "type": "git",

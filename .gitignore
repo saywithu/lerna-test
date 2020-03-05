@@ -106,3 +106,4 @@ dist
 .idea
 
 packages/*/lib
+packages/*/dist
