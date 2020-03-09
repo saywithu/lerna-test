@@ -1,0 +1,34 @@
+{
+  "name": "@saywithu-sdk/zb-logger",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "김준연 <saywithu@zigbang.com>",
+  "homepage": "https://github.com/saywithu/lerna-test#readme",
+  "license": "ISC",
+  "main": "dist/zb-logger.js",
+  "typings": "dist/typings",
+  "publishConfig": {
+    "access": "public"
+  },
+  "directories": {
+    "lib": "dist",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saywithu/lerna-test.git"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/saywithu/lerna-test/issues"
+  },
+  "dependencies": {
+    "dotenv": "8.2.0"
+  }
+}

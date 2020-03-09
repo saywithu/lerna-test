@@ -105,5 +105,5 @@ dist
 
 .idea
 
-packages/*/lib
+packages/zb-logger/dist
 packages/*/dist
