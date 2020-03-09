@@ -10,7 +10,7 @@ export enum ZBLogLevel
     Error,
 }
 
-export interface ZBLogger
+export interface Logger
 {
     log(msg: string, logLevel: ZBLogLevel): void;
     info(msg: string): void;
@@ -23,27 +23,27 @@ export interface ZBLoggingSettings
     level: string;
 }
 
-export class TSLogger implements ZBLogger
+export class ZBLogger implements Logger
 {
     private static Driver: ZBLogDriver;
     private static LoggingSettings: ZBLoggingSettings;
 
     public static initialize(driver: string = null)
     {
-        TSLogger.LoggingSettings = { level: "info" };
+        ZBLogger.LoggingSettings = { level: "info" };
 
-        TSLogger.Driver = LoggerDriverFactory.create(driver);
-        TSLogger.Driver.initialize(TSLogger.LoggingSettings);
+        ZBLogger.Driver = LoggerDriverFactory.create(driver);
+        ZBLogger.Driver.initialize(ZBLogger.LoggingSettings);
     }
 
     public createLogger(loggerName: string, params?: []): any
     {
-        return TSLogger.Driver.createLogger(loggerName, TSLogger.LoggingSettings, params);
+        return ZBLogger.Driver.createLogger(loggerName, ZBLogger.LoggingSettings, params);
     }
 
     public log(msg: string, logLevel: ZBLogLevel = ZBLogLevel.Info): void
     {
-        TSLogger.Driver.log(msg, logLevel);
+        ZBLogger.Driver.log(msg, logLevel);
     }
 
     public info(msg: string): void
