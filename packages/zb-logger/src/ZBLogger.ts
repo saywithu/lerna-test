@@ -30,7 +30,7 @@ export class TSLogger implements ZBLogger
 
     public static initialize(driver: string = null)
     {
-        TSLogger.LoggingSettings = { level: "Info" };
+        TSLogger.LoggingSettings = { level: "info" };
 
         TSLogger.Driver = LoggerDriverFactory.create(driver);
         TSLogger.Driver.initialize(TSLogger.LoggingSettings);

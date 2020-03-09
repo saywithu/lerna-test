@@ -30,5 +30,6 @@
   },
   "dependencies": {
     "dotenv": "8.2.0"
-  }
+  },
+  "gitHead": "69209c6751e8f6cbe58b69d9eae1d2765519e39d"
 }
