@@ -6,7 +6,7 @@
   "homepage": "https://github.com/saywithu/lerna-test#readme",
   "license": "ISC",
   "main": "dist/zb-logger.js",
-  "typings": "dist/typings",
+  "types": "dist/types",
   "publishConfig": {
     "access": "public"
   },

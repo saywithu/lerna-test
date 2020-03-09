@@ -6,7 +6,7 @@
   "homepage": "https://github.com/saywithu/lerna-test#readme",
   "license": "ISC",
   "main": "dist/test2.js",
-  "typings": "dist/test2.d.ts",
+  "types": "dist/test2.d.ts",
   "publishConfig": {
     "access": "public"
   },
