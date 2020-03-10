@@ -36,7 +36,7 @@ export class ZBLogger implements Logger
         ZBLogger.Driver.initialize(ZBLogger.LoggingSettings);
     }
 
-    public createLogger(loggerName: string, params?: []): ZBLogDriver
+    public createLogger(loggerName: string, params?: []): Logger
     {
         return ZBLogger.Driver.createLogger(loggerName, ZBLogger.LoggingSettings, params);
     }
@@ -64,8 +64,8 @@ export class ZBLogger implements Logger
 
 export interface ZBLogDriver
 {
-    initialize(loggingSettings: ZBLoggingSettings): void;
-    createLogger(loggerName: string, loggingSettings?: ZBLoggingSettings, params?: []): ZBLogDriver;
+    initialize(loggingSettings: any): void;
+    createLogger(loggerName: string, loggingSettings?: any, params?: []): Logger;
     log(msg: string, logLevel: ZBLogLevel): void;
 }
 
