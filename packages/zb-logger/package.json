@@ -5,7 +5,7 @@
   "author": "김준연 <saywithu@zigbang.com>",
   "homepage": "https://github.com/saywithu/lerna-test#readme",
   "license": "ISC",
-  "main": "dist/zb-logger.js",
+  "main": "dist/index.js",
   "types": "dist/types",
   "publishConfig": {
     "access": "public"
